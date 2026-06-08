@@ -459,8 +459,8 @@ h1,h2,h3,h4 { font-family: 'Playfair Display', serif; line-height: 1.15; }
 .timer-label { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.30); margin-bottom:4px; }
 .timer { font-size:28px; font-weight:700; color:#FFCC00; font-family:'Courier New',monospace; letter-spacing:0.05em; }
 
-.cta-btn { display:block; width:100%; background:linear-gradient(135deg,var(--gold) 0%,#A8743A 100%); color:var(--white); font-size:18px; font-weight:700; text-decoration:none; padding:19px 24px; border-radius:10px; text-transform:uppercase; letter-spacing:0.04em; box-shadow:0 6px 0 rgba(0,0,0,0.35),0 12px 28px rgba(200,150,90,0.28); transition:transform 0.15s,box-shadow 0.15s; cursor:pointer; border:none; animation:cta-pulse 2.5s infinite; }
-@keyframes cta-pulse { 0%,100%{transform:scale(1);box-shadow:0 6px 0 rgba(0,0,0,0.35),0 12px 28px rgba(200,150,90,0.28);} 50%{transform:scale(1.015);box-shadow:0 6px 0 rgba(0,0,0,0.35),0 18px 36px rgba(200,150,90,0.42);} }
+.cta-btn { display:block; width:100%; background:linear-gradient(135deg,var(--gold) 0%,#A8743A 100%); color:var(--white); font-size:18px; font-weight:700; text-decoration:none; padding:19px 24px; border-radius:10px; text-transform:uppercase; letter-spacing:0.04em; box-shadow:0 6px 0 rgba(0,0,0,0.35),0 12px 28px rgba(200,150,90,0.28); transition:transform 0.15s,box-shadow 0.15s; cursor:pointer; border:none; animation:cta-pulse 2.5s infinite; will-change: transform;}
+@keyframes cta-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.02); } }
 .cta-btn:active { transform:translateY(5px) scale(0.99); box-shadow:0 1px 0 rgba(0,0,0,0.35); animation:none; }
 .cta-sub { display:flex; align-items:center; justify-content:center; gap:8px; color:rgba(255,255,255,0.40); font-size:12.5px; margin-top:14px; }
 
